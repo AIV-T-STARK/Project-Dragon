@@ -1,0 +1,350 @@
+/*
+================================================
+* Template name : DRAGON                       *
+* Author        : Nguyen Gia Hao - AIV.T.Stark *
+* Version       : 1.0.0                        *
+* Created       : December 2018                *
+================================================
+*/
+/************************
+    1.  Basic           *
+    2.  Navbar          *
+    3.  Home            *
+    4.  About           *
+    5.  CTA Section     *
+    6.  Services        *
+    7.  Work Process    *
+    8.  Work Portfolio  *
+    9.  Video Section   *
+    10. Business About  *
+    11. Pricing         *
+    12. Funfacts        *
+    13. Team            *
+    14. Clients         *
+    15. Blog            *
+    16. Contact Us      *
+    17. Footer          *
+    18. RESPONSIVE      *
+*************************/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Rubik:400,500,700");
+/*====================
+| | | | 1. Basic
+======================*/
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: #f8f9fa;
+  color: #000; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Rubik', sans-serif; }
+
+section, .section {
+  position: relative; }
+
+.text-custom {
+  color: #F24259 !important; }
+
+.text-black {
+  color: #000 !important; }
+
+.text-white {
+  color: #fff !important; }
+
+.bg-custom {
+  background-color: #F24259 !important; }
+
+.btn {
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px; }
+  .btn.btn-rounded {
+    border-radius: 30px !important; }
+  .btn.btn-s {
+    font-size: 1rem !important; }
+
+.btn-custom {
+  color: #fff;
+  background: #F24259;
+  border: 2px solid #F24259; }
+  .btn-custom:hover {
+    color: #F24259;
+    background: transparent; }
+
+.btn-outline-custom {
+  color: #F24259;
+  background: transparent;
+  border: 2px solid #F24259; }
+  .btn-outline-custom:hover {
+    color: #fff;
+    background: #F24259; }
+
+.bg-dark-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.9); }
+
+.section-wrapper {
+  position: relative; }
+  .section-wrapper .section-inner {
+    padding: 80px 0; }
+
+.section-title {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto 1.5rem auto;
+  padding: 0 20px; }
+  .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5 {
+    text-transform: capitalize; }
+
+.title-underline {
+  margin-bottom: 7px; }
+  .title-underline .left, .title-underline .center, .title-underline .right {
+    display: inline-block;
+    height: 3px;
+    background: #000; }
+  .title-underline.white .left, .title-underline.white .center, .title-underline.white .right {
+    background: #fff !important; }
+  .title-underline .left {
+    width: 4px; }
+  .title-underline .center {
+    width: 25px; }
+  .title-underline .right {
+    width: 4px; }
+
+.paragraph {
+  max-width: 900px;
+  padding: 0 2rem;
+  margin: 1.5rem auto; }
+
+/*====================
+| | | | 2. Navbar
+======================*/
+/*====================
+| | | | 3. Home
+======================*/
+.home-wrapper {
+  width: 100%;
+  height: 500px;
+  background: url(../img/Home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.home-inner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .home-inner .home-content {
+    padding: 0 20px; }
+  .home-inner p {
+    max-width: 500px;
+    margin: 20px auto 25px auto; }
+
+/*========================
+| | | | 4. About
+======================*/
+/*========================
+| | | | 5. CTA Section
+======================*/
+.cta-wrapper {
+  background: url(../img/bg-cta.jpeg) no-repeat fixed;
+  background-size: cover;
+  background-position: center; }
+  .cta-wrapper .paragraph {
+    max-width: 630px; }
+
+/*========================
+| | | | 6. Services
+======================*/
+/*========================
+| | | | 7. Work Process
+======================*/
+/*========================
+| | | | 8. Work Portfolio
+======================*/
+.menu-protfolio {
+  list-style: none;
+  text-align: center; }
+  .menu-protfolio .menu-link {
+    display: inline-block;
+    margin: 6px 0; }
+    .menu-protfolio .menu-link a {
+      padding: 6px 16px;
+      border-radius: 5px;
+      background: transparent;
+      color: #000;
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 0.5s all; }
+      .menu-protfolio .menu-link a.active, .menu-protfolio .menu-link a:hover {
+        background: #F24259;
+        color: #fff; }
+
+.portfolio-box img {
+  border-radius: 5px; }
+
+/*========================
+| | | | 9. Video Section
+======================*/
+.video-section-wrapper {
+  background: url(../img/video-section.jpeg) no-repeat fixed;
+  background-size: cover;
+  background-position: center; }
+
+.icon-play {
+  display: inline-block;
+  padding: 7px;
+  border: 3px solid #F24259;
+  border-radius: 50%; }
+  .icon-play i {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    outline: none !important;
+    color: #fff;
+    background: #F24259;
+    font-size: 1.1rem;
+    line-height: 65px;
+    border-radius: 50%;
+    transition: 0.5s all; }
+    .icon-play i:hover {
+      background: #fff;
+      color: #F24259;
+      transition: 0.3s all; }
+
+/*========================
+| | | | 10. Business About
+======================*/
+/*========================
+| | | | 11. Pricing
+======================*/
+/*========================
+| | | | 12. Funfacts
+======================*/
+.funfacts-section-wrapper {
+  background: url(../img/funfacts.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: center; }
+
+.funfacts-box {
+  background: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.15); }
+
+/*========================
+| | | | 13. Team
+======================*/
+.team-box, .services-box {
+  cursor: default; }
+
+.team-box {
+  margin: 15px 0; }
+
+.team-box-img img {
+  display: block;
+  max-width: 160px;
+  margin: auto; }
+
+.member-social {
+  position: relative;
+  margin-top: 2rem; }
+  .member-social i {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 0.5rem;
+    color: rgba(20, 20, 20, 0.555);
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #e8e7e7;
+    border-radius: 50%;
+    transition: 0.5s all; }
+    .member-social i:hover {
+      border-color: #F24259;
+      background-color: #F24259;
+      color: #fff; }
+
+/*========================
+| | | | 14. Clients
+======================*/
+.clients-section-wrapper {
+  background: url(../img/bg-clients.jpeg) no-repeat fixed;
+  background-size: cover;
+  background-position: center; }
+
+.clients-content {
+  margin-top: 2rem; }
+  .clients-content .item {
+    text-align: center;
+    border-radius: 18px;
+    padding: 20px 10px 15px 10px; }
+  .clients-content .card-img img {
+    display: block;
+    max-width: 80px;
+    margin: 1.5rem auto; }
+
+#clients-owl .owl-dots {
+  margin-top: 1.5rem; }
+  #clients-owl .owl-dots .owl-dot span {
+    margin: 0 5px;
+    background: #646f79; }
+  #clients-owl .owl-dots .owl-dot.active span {
+    width: 30px;
+    background: #fff;
+    transition: all 0.5s; }
+
+/*========================
+| | | | 15. Blog
+======================*/
+.blog-desc {
+  padding: 0 5px;
+  position: relative;
+  top: -25px;
+  border: none;
+  border-radius: 10px; }
+  .blog-desc .blog-badge span {
+    padding: 5px 15px;
+    position: relative;
+    top: -16px;
+    background: #F24259;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 30px; }
+
+/*========================
+| | | | 16. Contact Us
+======================*/
+/*========================
+| | | | 17. Footer
+======================*/
+.footer-wrapper {
+  background: #222527; }
+
+.footer-title .footer-title-head {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem; }
+
+.footer-title .footer-underline {
+  width: 30px;
+  height: 3px;
+  background: #646f79; }
+
+.footer-desc {
+  margin-top: 2rem; }
+  .footer-desc p {
+    color: #646f79;
+    font-size: 14px;
+    margin-bottom: 0.25rem; }
+
+/*========================
+| | | | 18. RESPONSIVE
+======================*/
