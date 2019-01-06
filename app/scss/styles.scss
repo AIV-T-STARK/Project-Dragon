@@ -42,6 +42,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     background: #f8f9fa;
     color: $color-black;
+    position: relative;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -190,11 +191,12 @@ section,.section {
         }
         .nav-link {
             color: #000;
+            transition: 0.4s all;
             &:hover {
                 color: $color-custom;
             }
         }
-        .active > .nav-link {
+        .nav-link.active {
             color: $color-custom;
         }
     }

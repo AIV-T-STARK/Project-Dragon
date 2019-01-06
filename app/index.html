@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-custom" data-offset="76">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-custom">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-custom" id="navbar-id">
         <div class="container">
             <a class="navbar-brand" href="index.html">DRAGON</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#NavbarTop">
@@ -31,7 +31,7 @@
             </button>
             <div class="collapse navbar-collapse" id="NavbarTop">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
@@ -561,7 +561,7 @@
                                         <div class="funfacts-box-icon text-custom">
                                             <i class="far fa-clock fa-3x"></i>
                                         </div>
-                                        <h1 class="mt-4">654</h1>
+                                        <h1 class="mt-4"><span class="counter">654</span> +</h1>
                                         <p class="text-muted">Working Hours</p>
                                     </div>
                                 </div>
@@ -572,7 +572,7 @@
                                         <div class="funfacts-box-icon text-custom">
                                             <i class="fas fa-project-diagram fa-3x"></i>
                                         </div>
-                                        <h1 class="mt-4">6400</h1>
+                                        <h1 class="mt-4"><span class="counter">6400</span> +</h1>
                                         <p class="text-muted">Completed Projects</p>
                                     </div>
                                 </div>
@@ -583,7 +583,7 @@
                                         <div class="funfacts-box-icon text-custom">
                                             <i class="far fa-smile fa-3x"></i>
                                         </div>
-                                        <h1 class="mt-4">2389</h1>
+                                        <h1 class="mt-4"><span class="counter">2389</span> +</h1>
                                         <p class="text-muted">No. of Clients</p>
                                     </div>
                                 </div>
@@ -594,7 +594,7 @@
                                         <div class="funfacts-box-icon text-custom">
                                             <i class="far fa-user fa-3x"></i>
                                         </div>
-                                        <h1 class="mt-4">269</h1>
+                                        <h1 class="mt-4"><span class="counter">269</span> +</h1>
                                         <p class="text-muted">Team Member</p>
                                     </div>
                                 </div>
@@ -1014,12 +1014,26 @@
             </div>
         </div>
     </footer>
-    <!-- script -->
+
+
+    <!-- --------------- SCRIPT ------------------ -->
+
+    <!-- JQuery -->
     <script src="./js/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap -->
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/popper.min.js"></script>
+
+    <!-- Carousel -->
     <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- linkBox -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Counter Up -->
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
 
     <script src="./js/main.js"></script>
 </body>
