@@ -159,7 +159,46 @@ section,.section {
 | | | | 2. Navbar
 ======================*/
 
+.navbar-custom {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    .navbar-brand {
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 700;
+        &:hover, &:focus {
+            color: #000;
+        }
+    }
 
+    .navbar-toggler {
+        &:focus {
+            outline: none;
+        }
+    }
+    .navbar-toggler-icon-custom {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: #000;
+        margin: 4px 0;
+    }
+    .navbar-nav {
+        .nav-item {
+            margin-right: 10px;
+        }
+        .nav-link {
+            color: #000;
+            &:hover {
+                color: $color-custom;
+            }
+        }
+        .active > .nav-link {
+            color: $color-custom;
+        }
+    }
+}
 /*====================
 | | | | 3. Home
 ======================*/
@@ -183,9 +222,10 @@ section,.section {
     }
     p {
         max-width: 500px;
-        margin: 20px auto 25px auto;
+        margin: 20px auto 50px auto;
     }
 }
+
 
 
 /*========================
@@ -296,6 +336,7 @@ section,.section {
 .funfacts-box {
     background: transparent;
     border: 1px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 0;
 }
 /*========================
 | | | | 13. Team
