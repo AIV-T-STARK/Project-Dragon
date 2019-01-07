@@ -378,3 +378,6 @@ section, .section {
 /*========================
 | | | | 18. RESPONSIVE
 ======================*/
+@media (max-width: 768px) {
+  .navbar-custom > .container {
+    width: 90%; } }
